@@ -14,12 +14,12 @@ func menu() {
 		fmt.Println("====== Menu Utama ======")
 		fmt.Println("1. Input Data Pasien")
 		fmt.Println("2. Tampilkan Semua Pasien")
-		fmt.Println("3. Urutkan Berdasarkan Umur (Selection Sort)")
-		fmt.Println("4. Urutkan Berdasarkan Biaya (Gnome Sort)")
-		fmt.Println("5. Cari Pasien Berdasarkan Nama (Linear Search)")
-		fmt.Println("6. Cari Pasien Berdasarkan Umur (Binary Search)")
+		fmt.Println("3. Urutkan Berdasarkan Umur")
+		fmt.Println("4. Urutkan Berdasarkan Biaya")
+		fmt.Println("5. Cari Pasien Berdasarkan Nama")
+		fmt.Println("6. Cari Pasien Berdasarkan Umur")
 		fmt.Println("0. Keluar")
-		fmt.Println("Pilih menu (0-6): ")
+		fmt.Println("Pilih menu : ")
 
 		var pilihan string
 		fmt.Scanln(&pilihan)
@@ -47,7 +47,7 @@ func menu() {
 			linearSearchNama(daftarPasien, nama)
 			pause()
 		case "6":
-			fmt.Print("Masukkan umur yang dicari: ")
+			fmt.Print("Masukkan umur: ")
 			var umurStr string
 			fmt.Scanln(&umurStr)
 			umur, err := strconv.Atoi(umurStr)
