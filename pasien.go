@@ -47,7 +47,7 @@ func tampilkanPasien() {
 		fmt.Print("Belum ada data pasien.\n")
 		return
 	}
-	fmt.Print("=== Daftar Pasien ===")
+	fmt.Println("=== Daftar Pasien ===")
 	for i, p := range daftarPasien {
 		fmt.Printf("%d. Nama: %s | Umur: %d | Penyakit: %s | Biaya: Rp%d\n", i+1, p.Nama, p.Umur, p.Penyakit, p.Biaya)
 	}
